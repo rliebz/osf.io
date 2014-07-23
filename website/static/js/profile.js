@@ -364,13 +364,13 @@
 
         self.values = ko.computed(function() {
             return [
-                {label: 'Personal Site', text: self.personal(), value: self.personal.url()},
-                {label: 'ORCID', text: self.orcid(), value: self.orcid.url()},
-                {label: 'ResearcherId', text: self.researcherId(), value: self.researcherId.url()},
-                {label: 'Twitter', text: self.twitter(), value: self.twitter.url()},
-                {label: 'GitHub', text: self.github(), value: self.github.url()},
-                {label: 'LinkedIn', text: self.linkedIn(), value: self.linkedIn.url()},
-                {label: 'Google Scholar', text: self.scholar(), value: self.scholar.url()}
+                {label: 'Personal Site', text: self.personal(), value: self.personal.url(), icon: ''},
+                {label: 'ORCID', text: self.orcid(), value: self.orcid.url(), icon: ''},
+                {label: 'ResearcherId', text: self.researcherId(), value: self.researcherId.url(), icon: ''},
+                {label: 'Twitter', text: self.twitter(), value: self.twitter.url(), icon: '<i class="icon-twitter-sign"></i>'},
+                {label: 'GitHub', text: self.github(), value: self.github.url(), icon: '<i class="icon-github-sign"></i>'},
+                {label: 'LinkedIn', text: self.linkedIn(), value: self.linkedIn.url(), icon: '<i class="icon-linkedin-sign"></i>'},
+                {label: 'Google Scholar', text: self.scholar(), value: self.scholar.url(), icon: ''}
             ];
         });
 

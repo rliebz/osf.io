@@ -20,7 +20,7 @@
             </div>
 
             <div class="form-group">
-                <label>Twitter</label>
+                <label><i class="icon-twitter-sign"></i> Twitter</label>
                 <input class="form-control" data-bind="value: twitter" />
             </div>
 
@@ -30,12 +30,12 @@
             </div>
 
             <div class="form-group">
-                <label>LinkedIn</label>
+                <label><i class="icon-linkedin-sign"></i> LinkedIn</label>
                 <input class="form-control" data-bind="value: linkedIn" />
             </div>
 
             <div class="form-group">
-                <label>GitHub</label>
+                <label><i class="icon-github-sign"></i> GitHub</label>
                 <div data-bind="css: {'input-group': github.hasAddon()}">
                     <input class="form-control" data-bind="value: github" />
                     <span
@@ -80,7 +80,7 @@
         <table class="table" data-bind="if: hasValues()">
             <tbody data-bind="foreach: values">
                 <tr data-bind="if: value">
-                    <td>{{ label }}</td>
+                    <td><span data-bind="html: icon"></span> {{ label }}</td>
                     <td><a target="_blank" data-bind="attr.href: value">{{ text }}</a></td>
                 </tr>
             </tbody>
