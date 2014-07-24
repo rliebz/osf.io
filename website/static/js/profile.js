@@ -367,7 +367,7 @@
         self.values = ko.computed(function() {
             return [
                 {label: 'Personal Site', text: self.personal(), value: self.personal.url(),
-                    icon: ''}, // The icon will be the user's Gravatar, passed using Mako
+                    icon: '<img src="' + self.gravatar_url() + '" style="border-radius: 3px" height="20">'},
                 {label: 'ORCID', text: self.orcid(), value: self.orcid.url(),
                     icon: '<img src="/static/img/social-media/orcid.ico" height="20">'},
                 {label: 'ResearcherId', text: self.researcherId(), value: self.researcherId.url(),

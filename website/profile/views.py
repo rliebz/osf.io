@@ -289,6 +289,7 @@ def serialize_social(auth, uid=None, **kwargs):
     append_editable(out, auth, uid)
     if out['editable']:
         out['addons'] = serialize_social_addons(target)
+    out['gravatar_url'] = auth.user.gravatar_url
     return out
 
 
