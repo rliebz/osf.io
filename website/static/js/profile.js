@@ -364,13 +364,20 @@
 
         self.values = ko.computed(function() {
             return [
-                {label: 'Personal Site', text: self.personal(), value: self.personal.url(), icon: ''},
-                {label: 'ORCID', text: self.orcid(), value: self.orcid.url(), icon: ''},
-                {label: 'ResearcherId', text: self.researcherId(), value: self.researcherId.url(), icon: ''},
-                {label: 'Twitter', text: self.twitter(), value: self.twitter.url(), icon: '<i class="icon-twitter-sign"></i>'},
-                {label: 'GitHub', text: self.github(), value: self.github.url(), icon: '<i class="icon-github-sign"></i>'},
-                {label: 'LinkedIn', text: self.linkedIn(), value: self.linkedIn.url(), icon: '<i class="icon-linkedin-sign"></i>'},
-                {label: 'Google Scholar', text: self.scholar(), value: self.scholar.url(), icon: ''}
+                {label: 'Personal Site', text: self.personal(), value: self.personal.url(),
+                    icon: ''},
+                {label: 'ORCID', text: self.orcid(), value: self.orcid.url(),
+                    icon: '<img src="/static/img/social-media/orcid.ico" height="16">'},
+                {label: 'ResearcherId', text: self.researcherId(), value: self.researcherId.url(),
+                    icon: '<img src="/static/img/social-media/researcherid.ico" height="16">'},
+                {label: 'Twitter', text: self.twitter(), value: self.twitter.url(),
+                    icon: '<img src="/static/img/social-media/twitter.ico" height="16">'},
+                {label: 'GitHub', text: self.github(), value: self.github.url(),
+                    icon: '<img src="/static/img/social-media/github.ico" height="16">'},
+                {label: 'LinkedIn', text: self.linkedIn(), value: self.linkedIn.url(),
+                    icon: '<img src="/static/img/social-media/linkedin.ico" height="16">'},
+                {label: 'Google Scholar', text: self.scholar(), value: self.scholar.url(),
+                    icon: '<img src="/static/img/social-media/google-scholar.ico" height="16">'}
             ];
         });
 
