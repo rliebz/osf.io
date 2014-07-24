@@ -80,7 +80,16 @@
         <table class="table" data-bind="if: hasValues()">
             <tbody data-bind="foreach: values">
                 <tr data-bind="if: value">
-                    <td><span data-bind="html: icon"></span> {{ label }}</td>
+                    <td>
+                        <span>
+                            <span data-bind="if: label === 'Personal Site'">
+                                <img id='personal-site-icon' src="${profile['gravatar_url']}" style="border-radius: 3px" height="20" />
+                            </span>
+                            <span data-bind="ifnot: label === 'Personal Site'">
+                                <span data-bind="html: icon"></span>
+                            </span>
+                        </span> {{ label }}
+                    </td>
                     <td><a target="_blank" data-bind="attr.href: value">{{ text }}</a></td>
                 </tr>
             </tbody>

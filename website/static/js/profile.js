@@ -312,6 +312,8 @@
 
         self.addons = ko.observableArray();
 
+        self.gravatar_url = ko.observable();
+
         self.personal = extendLink(
             // Note: Apply extenders in reverse order so that `ensureHttp` is
             // applied before `url`.
@@ -365,19 +367,19 @@
         self.values = ko.computed(function() {
             return [
                 {label: 'Personal Site', text: self.personal(), value: self.personal.url(),
-                    icon: ''},
+                    icon: ''}, // The icon will be the user's Gravatar, passed using Mako
                 {label: 'ORCID', text: self.orcid(), value: self.orcid.url(),
-                    icon: '<img src="/static/img/social-media/orcid.ico" height="16">'},
+                    icon: '<img src="/static/img/social-media/orcid.ico" height="20">'},
                 {label: 'ResearcherId', text: self.researcherId(), value: self.researcherId.url(),
-                    icon: '<img src="/static/img/social-media/researcherid.ico" height="16">'},
+                    icon: '<img src="/static/img/social-media/researcherid.ico" height="20">'},
                 {label: 'Twitter', text: self.twitter(), value: self.twitter.url(),
-                    icon: '<img src="/static/img/social-media/twitter.ico" height="16">'},
+                    icon: '<img src="/static/img/social-media/twitter.ico" height="20">'},
                 {label: 'GitHub', text: self.github(), value: self.github.url(),
-                    icon: '<img src="/static/img/social-media/github.ico" height="16">'},
+                    icon: '<img src="/static/img/social-media/github.ico" height="20">'},
                 {label: 'LinkedIn', text: self.linkedIn(), value: self.linkedIn.url(),
-                    icon: '<img src="/static/img/social-media/linkedin.ico" height="16">'},
+                    icon: '<img src="/static/img/social-media/linkedin.ico" height="20">'},
                 {label: 'Google Scholar', text: self.scholar(), value: self.scholar.url(),
-                    icon: '<img src="/static/img/social-media/google-scholar.ico" height="16">'}
+                    icon: '<img src="/static/img/social-media/google-scholar.ico" height="20">'}
             ];
         });
 
