@@ -20,7 +20,7 @@
             </div>
 
             <div class="form-group">
-                <label><i class="icon-twitter-sign"></i> Twitter</label>
+                <label>Twitter</label>
                 <input class="form-control" data-bind="value: twitter" />
             </div>
 
@@ -30,12 +30,12 @@
             </div>
 
             <div class="form-group">
-                <label><i class="icon-linkedin-sign"></i> LinkedIn</label>
+                <label>LinkedIn</label>
                 <input class="form-control" data-bind="value: linkedIn" />
             </div>
 
             <div class="form-group">
-                <label><i class="icon-github-sign"></i> GitHub</label>
+                <label>GitHub</label>
                 <div data-bind="css: {'input-group': github.hasAddon()}">
                     <input class="form-control" data-bind="value: github" />
                     <span
